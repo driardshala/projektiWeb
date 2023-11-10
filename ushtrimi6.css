@@ -1,0 +1,40 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color:goldenrod;
+    padding: 10px;
+    margin: -10px;
+    border: solid 1px;
+}
+#home{
+    padding: 10px;
+    background-color: gold;
+    border-radius: 20px;
+}
+#about{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: gold;
+}
+#contact{
+    padding: 10px;
+    background-color: gold;
+    border-radius: 25px;
+}
+#btn{
+    padding: 10px;
+    border-radius: 20px;
+    border: 0px;
+}
+.main{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
