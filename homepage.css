@@ -6,6 +6,11 @@
     margin: -10px;
     border: solid 1px;
 }
+#name{
+    display: flex;
+    justify-content: start;
+    margin-top: -30px;
+}
 #home{
     padding: 10px;
     background-color: gold;
@@ -27,7 +32,7 @@
     border: 0px;
 }
 .main{
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     justify-content: space-between;
