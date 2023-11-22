@@ -29,6 +29,16 @@
     border-radius: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#Buy{
+    padding: 10px;
+    background-color: gold;
+    border-radius: 25px;
+}
+#Sell{
+    padding: 10px;
+    background-color: gold;
+    border-radius: 25px;
+}
 #btn{
     padding: 10px;
     border-radius: 20px;

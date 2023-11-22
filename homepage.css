@@ -1,55 +1,87 @@
-.navbar{
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Container {
+    border-radius: 10px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 15px;
+}
+
+.div1 {
     display: flex;
     justify-content: center;
-    background-color:goldenrod;
-    padding: 10px;
-    margin: -10px;
-    border: solid 1px;
+    color: aliceblue;
+
 }
-#name{
+
+a {
+    text-decoration: none;
+}
+
+.name {
+
     display: flex;
-    justify-content: start;
-    margin-top: -30px;
+    justify-content: center;
+    margin-top: -40px;
 }
-#home{
+
+.home {
+    left: 50%;
     padding: 10px;
-    background-color: gold;
+    background-color: white;
     border-radius: 20px;
+    /* justify-content: left; */
 }
-#about{
+
+.about {
     padding: 10px;
     border-radius: 20px;
-    background-color: gold;
+    background-color: white;
+    justify-content: left;
+    
 }
-#contact{
+
+.contact {
     padding: 10px;
-    background-color: gold;
+    background-color: white;
     border-radius: 25px;
+    /* justify-content: left; */
 }
-#Buy{
+.Buy {
     padding: 10px;
-    background-color: gold;
+    background-color: white;
     border-radius: 25px;
+    justify-content: right;
 }
-#Sell{
+
+.Sell {
     padding: 10px;
-    background-color: gold;
-    border-radius: 25px;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: right;
+
 }
-#btn{
+
+.btp{
     padding: 10px;
     border-radius: 20px;
     border: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px; */
+    
 }
-.main{
+
+.main {
     padding: 20px;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
-    
-}
-.footer{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
 }

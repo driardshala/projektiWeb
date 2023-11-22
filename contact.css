@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.Container{
+    border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    background-color: gray;
+}
+.div1{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    
+}
+ .name{
+   
+    display:flex ;
+    justify-content: start;
+    margin-top: -40px;
+}
+
+.home{
+    left: 50%;
+    padding: 10px;
+    background-color:white;
+    border-radius: 20px;
+}
+.about{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+.contact{
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+   
+}
+.Buy{
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+    justify-content: right;
+}
+.Sell{
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+    justify-content: right;
+    
+}
+.btn{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px; */
+}
+.main{
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+                                                                                              
