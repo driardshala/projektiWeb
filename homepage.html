@@ -6,31 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G&Sh Real Estate</title>
     <link rel="stylesheet" href="homepage.css">
+    <script src="https://kit.fontawesome.com/6866180903.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="Container">
-        <div class="div1">
-            <div class="home"><a href="homepage.html">Home</a></div>
-            <div class="about"><a href="about.html">About Us</a></div>
-            <div class="contact"><a href="contact.html">Contact Us</a></div>
+    <!--NavBar Section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">G&Sh Real Estate</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="homepage.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact.html" class="navbar__links">Contact Us</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">About Us</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="signup.html" class="button">Sign up</a>
+                </li>
+            </ul>
         </div>
-        <div class="div2">
-            <h1>G&Sh Real Estate</h1>
+    </nav>
+    <!--Main Section-->
+  <div class="main">
+    <div class="main__container">
+        <div class="main__content">
+            <h1>G&Sh</h1>
+            <h2>Real Estate</h2>
+            <p>Founded by Driard Shala and Arnis Gegollaj.</p>
+            <button class="main__btn"><a href="buy.html">Get Started</a></button>
         </div>
-        <div class="div1">
-            <div class="Buy"><a href="Buy.html">Buy</a></div>
-            <div class="Sell"><a href="Sell.html">Sell</a></div>
-            <div><input type="button" value="Log in" class="btn"></div>
+        <div class="main__img--container">
+          <img src="images/city-solid.svg" alt="pic" id="main__img">
         </div>
     </div>
-    <main class="main">
-        <div id="apt"><img src="apartment1.jpg" alt="" width=250px></div>
-        <div id="apt"><img src="apartment2.jpg" alt="" width=250px></div>
-        <div id="apt"><img src="apartment3.png" alt="" width=250px></div>
-        <div id="apt"><img src="apartment4.jpg" alt="" width=250px></div>
-    </main>
+  </div>
 
+    <!-- Services Section -->
+
+    <script src="homepage.js"></script>
 </body>
 
 </html>
