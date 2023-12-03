@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+        <!--NavBar Section-->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="homepage.html" id="navbar__logo">G&Sh Real Estate</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="contact.html" class="navbar__links">Contact</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="about.html" class="navbar__links">About</a>
+                    </li>
+    
+                    <li class="navbar__btn">
+                        <a href="signup.html" class="button">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Main Section -->
+        <div class="login">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Email" required>
+                    <i class='bx bx-envelope' ></i>   
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div>
+                    <label><input type="checkbox">Remember me?</label>
+                    <a href="/">Forgot Password?</a>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="/">Register</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
