@@ -1,31 +1,61 @@
 let nameRegex = /[A-Z a-z]{3,8}$/;
-let lastRegex = /[A-Z a-z]{3,8}$/
-let emailRegex = /^\S+@\S+\.\S+$/;
-let passwordRegex = /^[A-Z][a-z]{3,8}$/;
+let lastnameRegex = /[A-Z a-z]{3,8}$/;
+let emailRegex =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let passwordRegex = /^[A-Z][a-z]$/;
+let cpasswordRegex = /^[A-Z][a-z]$/;
+
 
 function validateForm(){
-    let name = document.getElementById('name').value;
-    let last = document.getElementById('last').value;
-    let email = document.getElementById('email').value;
-    let password = document.getElementById('password').value;
-}
+    let nameInput = document.getElementById('name');
+    let nameError = document.getElementById('nameError');
+    let lastnameInput = document.getElementById('lastname');
+    let lastnameError = document.getElementById('lastnameError');
+    let emailInput = document.getElementById('email');// value me marr vlera inpute
+    let emailError = document.getElementById('emailError');
+    let passwordInput = document.getElementById('password');
+    let passwordError = document.getElementById('passwordError');
+    let cpasswordInput = document.getElementById('cpassword');
+    let cpasswordError = document.getElementById('cpasswordError');
 
-if(!nameRegex.test(name)){
-    alert('keni gabuar')
-    return false;
-}
+    nameError.innerText = '';
+    lastnameError.innerText = '';
+    emailError.innerText = '';
+    passwordError.innerText = '';
+    confirmError
 
-if(!lastRegex.test(last)){
-    alert('keni gabuar')
-    return false;
-}
-if(!emailRegex.test(email)){
-    alert('keni gabuar')
-    return false;
-}
-if(!passwordRegex.test(password)){
-    alert('keni gabuar')
-    return false;
+    if(!nameRegex.test(nameInput.value)){
+        nameError.innerText = 'invalid name';
+        return;
+    }
+    
+    if(!lastnameRegex.test(lastnameInput.value)){
+        lastnameError.innerText = 'invalid lastname';
+        return;
+    }
+
+    if(!emailRegex.test(emailInput.value)){
+        emailError.innerText = 'invalid email';
+        return;
+    }
+
+    if(!passwordRegex.test(passwordInput.value)){
+        passwordError.innerText = 'invalid password';
+        return;
+    }
+
+    if(!cpasswordRegex.test(cpasswordInput.value)){
+        cpasswordError.innerText = 'invalid password'
+        return;
+    }
+    if(cpasswordInput !== passwordInput){
+        cpasswordError.innerText = 'Passwords do not match';
+        return;
+    }else{
+        cpasswordError.innerText = '';
+    }
+
+
+    alert('form submitted succesfully!');
 }
 
 
