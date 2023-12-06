@@ -234,11 +234,12 @@
     border: none;
     outline: none;
     border: solid 2px rgba(255,255, 255, .2);
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .input-box input::placeholder{
     color: #131313;
+    text-align: center;
 }
 
 .input-box i{
@@ -247,6 +248,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+    color: #141414;
 }
 
 .div1{
@@ -268,6 +270,8 @@
     cursor: pointer;
 }
 
-.input-box i{
-    color: #141414;
+.btn:hover{
+    background: #4837ff;
+    transition: all 0.3s ease;
 }
+
