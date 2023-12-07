@@ -35,7 +35,7 @@
             <form action="">
                 <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" id="email" placeholder="Email" required>
+                    <input type="email" id="email" placeholder="Email" required>
                     <i class='bx bx-envelope'></i>
                     <div class="error-message" id="emailError"></div>
                 </div>
@@ -46,7 +46,6 @@
                 </div>
                 <div>
                     <label><input type="checkbox">Remember me?</label>
-
                 </div>
                 <div class="div1">
                     <button type="submit" onclick="validateForm()" class="btn">Login</button>
@@ -54,6 +53,33 @@
                         <p>Don't have an account? <a href="register.html">Register</a></p>
                     </div>
                 </div>
+                <script>
+                    let emailRegex =  /^\S+@\S+\.\S+$/;
+                    let passwordRegex = /^[a-zA-Z0-9]{6,16}$/;
+
+                function validateForm(){
+                    let emailInput = document.getElementById('email');
+                    let emailError = document.getElementById('emailError');
+
+                    let passwordInput = document.getElementById('password');
+                    let passwordError = document.getElementById('passwordError');
+
+                    emailError.innerText = '';
+                    passwordError.innerText = '';
+
+                    if(!emailRegex.test(emailInput.value)){
+                    emailError.innerText = 'invalid email';
+                    return false;
+                     }
+                    if(!passwordRegex.test(passwordInput.value)){
+                    passwordError.innerText = 'invalid password';
+                    return false;
+                     }
+
+                    alert('form submitted succesfully!');
+                    return true;
+                    }
+                </script>
             </form>
         </div>
     </div>
