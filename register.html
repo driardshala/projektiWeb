@@ -35,27 +35,32 @@
             <form action="">
                 <h1>Register</h1>
                 <div class="input-box">
-                    <input type="text" id="name" placeholder="Name" required>
+                    <label style="font-size: 12px;" for="name">Name:</label><br>
+                    <input type="text" id="name" required>
                     <i class='bx bxs-contact'></i>
                     <div class="error-message" id="nameError"></div>
                 </div>
                 <div class="input-box">
-                    <input type="text" id="lastname" placeholder="Last Name" required>
+                    <label style="font-size: 12px;" for="lastname">Last Name:</label><br>
+                    <input type="text" required>
                     <i class='bx bxs-contact'></i>
                     <div class="error-message" id="lastnameError"></div>
                 </div>
                 <div class="input-box">
-                    <input type="email" id="email" placeholder="Email" required>
+                    <label style="font-size: 12px;" for="email">Email:</label><br>
+                    <input type="email" id="email" required>
                     <i class='bx bx-envelope'></i>
                     <div class="error-message" id="emailError"></div>
                 </div>
                 <div class="input-box">
-                    <input type="password" id="password" placeholder="Password" required>
+                    <label style="font-size: 12px;" for="password">Password:</label><br>
+                    <input type="password" id="password" required>
                     <i class='bx bxs-lock-alt'></i>
                     <div class="error-message" id="passwordError"></div>
                 </div>
                 <div class="input-box">
-                    <input type="password" id="cpassword" placeholder="Confirm Password" required>
+                    <label style="font-size: 12px;" for="cpassword"> Confirm Password:</label><br>
+                    <input type="password" id="cpassword" required>
                     <i class='bx bxs-lock-alt'></i>
                     <div class="error-message" id="cpasswordError"></div>
                 </div>
@@ -114,7 +119,7 @@
     }
     if(passwordInput !== cpasswordInput){
         cpasswordError.innerText = 'Passwords do not match';
-        return false;
+        return true;
     }
 
     alert('Sign up form submitted successfully!');

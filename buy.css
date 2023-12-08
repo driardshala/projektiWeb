@@ -4,10 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    outline: none;
-    border: none;
-
 }
 
 .navbar{
@@ -193,86 +189,10 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
     /* Main Section CSS */
-.login_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: auto;
-    background: #141414;
-    padding: 5rem 20rem 35rem 20rem;
-}
-
-.login{
-    width: 420px;
-    background-color: black;
-    color: white;
-    text-decoration-color: white;
-    border-radius: 25px;
-    padding: 5rem;
-    
-}
-
-.login h1{
-    font-size: 40px;
-    text-align: center;
-}
-
-.login .input-box{
-    position: relative;
-    width: 100%;
-    height: 55px;
-    margin: 32px 0;
-}
-
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    border: solid 2px rgba(255,255, 255, .2);
-    border-radius: 20px;
-}
-
-.input-box input::placeholder{
-    color: #131313;
-    text-align: center;
-}
-
-.input-box i{
-    position: absolute;
-    right: 20px;
-    top: 90%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #141414;
-}
-
-.div1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.btn{
-    width: 80%;
-    height: 45px;
-    align-self: center;
-    background-color: white;
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #131313;
-    margin-top: 10PX;
-    cursor: pointer;
-}
-
-.btn:hover{
-    background: #4837ff;
-    transition: all 0.3s ease;
-}
-
-.error-message{
-    color: #fff;
-}
+    .main{
+        display: flex;
+        background-color: #131313;
+        justify-content: space-evenly;
+    }

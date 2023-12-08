@@ -55,7 +55,7 @@
                 </div>
                 <script>
                     let emailRegex =  /^\S+@\S+\.\S+$/;
-                    let passwordRegex = /^[a-zA-Z0-9]{6,16}$/;
+                    let passwordRegex = /^[a-zA-Z0-9]{6,16}+$/;
 
                 function validateForm(){
                     let emailInput = document.getElementById('email');
@@ -88,5 +88,4 @@
 
     <script src="signup.js"></script>
 </body>
-
 </html>
