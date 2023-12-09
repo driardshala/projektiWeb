@@ -202,7 +202,7 @@
     padding: 2%;
     margin: 2px;
     border-radius: 50px;
-    filter: drop-shadow(10px 5px 4px red);
+    filter: drop-shadow(7px 4px 3px #ff0844);
     width: 700px;
 }
 .form{
@@ -214,7 +214,7 @@
     border: solid rgba(0, 0, 0, 0.423) 10px;
     width: 30%;
     height: 500px;
-    filter: drop-shadow(10px 5px 4px red);
+    filter: drop-shadow(7px 4px 3px #ff0844);
     align-items: center;    
     
 
